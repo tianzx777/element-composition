@@ -14,7 +14,8 @@
     "format": "prettier --write src/",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commit": "git cz"
   },
   "dependencies": {
     "pinia": "^2.1.7",
@@ -47,10 +48,5 @@
     "vitepress": "^1.2.2",
     "vitest": "^1.4.0",
     "vue-tsc": "^2.0.11"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -e $GIT_PARAMS"
-    }
   }
 }
