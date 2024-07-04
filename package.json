@@ -46,5 +46,10 @@
     "vitepress": "^1.2.2",
     "vitest": "^1.4.0",
     "vue-tsc": "^2.0.11"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $GIT_PARAMS"
+    }
   }
 }
